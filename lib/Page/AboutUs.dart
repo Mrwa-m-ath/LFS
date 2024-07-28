@@ -71,7 +71,7 @@ class _AboutUsState extends State<AboutUs> {
         ],
         child: LayoutBuilder(
           builder: (context, constraints) {
-            if (constraints.maxWidth < 600) {
+            if (constraints.maxWidth < 768) {
               return DisMobile(context);
             } else {
               return DisPlayDeskTop(context);

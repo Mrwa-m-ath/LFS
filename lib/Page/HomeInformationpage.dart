@@ -85,7 +85,7 @@ class _HomeInformationpageState extends State<HomeInformationpage>
         listener: (context, state) {},
         builder: (context, state) =>
             LayoutBuilder(builder: (context, constraints) {
-              if (constraints.maxWidth < 800) {
+              if (constraints.maxWidth < 768 ) {
                 return phone(context);
               } else {
                 return Des(context);
