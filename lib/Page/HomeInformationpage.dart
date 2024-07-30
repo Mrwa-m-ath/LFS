@@ -85,7 +85,7 @@ class _HomeInformationpageState extends State<HomeInformationpage>
         listener: (context, state) {},
         builder: (context, state) =>
             LayoutBuilder(builder: (context, constraints) {
-              if (constraints.maxWidth < 768 ) {
+              if (constraints.maxWidth < 800) {
                 return phone(context);
               } else {
                 return Des(context);
@@ -1433,36 +1433,36 @@ Widget phone(context) => DefaultTabController(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
-//                             Expanded(
-//                               child: Padding(
-//                                 padding: const EdgeInsets.all(9.0),
-//                                 child: Container(
-//                                     color: Colors.orange,
-//                                     child: GridView.count(
-//                                         shrinkWrap: true,
-//                                         crossAxisSpacing: 1,
-//                                         mainAxisSpacing: 1,
-//                                         childAspectRatio:
-//                                             MediaQuery.of(context).size.width <
-//                                                     650
-//                                                 ? 1.9 / 2.2
-//                                                 : 1.9 / 2.9,
-//                                         physics: ScrollPhysics(),
-//                                         crossAxisCount:
-//                                             MediaQuery.of(context).size.width <
-//                                                     650
-//                                                 ? 1
-//                                                 : 2,
-//                                         children: List.generate(
-//                                             NewsMobeVac.length,
-//
-// growable: false,
-//                                             (index) => pcLastNews(
-//                                                 NewsMobeVac[index],
-//                                                 context,
-//                                                 index)))),
-//                               ),
-//                             ),
+                            Expanded(
+                              child: Padding(
+                                padding: const EdgeInsets.all(9.0),
+                                child: Container(
+                                    color: Colors.orange,
+                                    child: GridView.count(
+                                        shrinkWrap: true,
+                                        crossAxisSpacing: 1,
+                                        mainAxisSpacing: 1,
+                                        childAspectRatio:
+                                            MediaQuery.of(context).size.width <
+                                                    650
+                                                ? 1.9 / 2.2
+                                                : 1.9 / 2.9,
+                                        physics: ScrollPhysics(),
+                                        crossAxisCount:
+                                            MediaQuery.of(context).size.width <
+                                                    650
+                                                ? 1
+                                                : 2,
+                                        children: List.generate(
+                                            NewsMobeVac.length,
+
+growable: false,
+                                            (index) => pcLastNews(
+                                                NewsMobeVac[index],
+                                                context,
+                                                index)))),
+                              ),
+                            ),
                           ],
                         ),
                       ),
